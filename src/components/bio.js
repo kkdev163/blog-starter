@@ -38,8 +38,9 @@ function Bio() {
               }}
             />
             <p>
-              A personal blog by <strong>{author}</strong> who lives and works in HangZhou focusing on web development.
+              <strong>{author}</strong>的个人博客，目前主要的工作方向是前端监控领域，欢迎使用<a href={`mailto:${social.email}`}>邮件</a>与我交流。
             </p>
+            
           </div>
         )
       }}
@@ -60,7 +61,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          email
         }
       }
     }

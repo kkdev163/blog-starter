@@ -66,7 +66,7 @@ $docker plugin install vieux/sshfs sshkey.source=/home/sentry/.ssh/
 3. 创建数据卷
 每台机器都需要安装
 ```
-$docker volume create -d vieux/sshfs -o sshcmd=sentry@hzabj-music-xxxx-machine3::/home/sentry/data 
+$docker volume create -d vieux/sshfs -o sshcmd=sentry@hzabj-music-xxxx-machine3:/home/sentry/data 
  -o port=1046 -o uid=999,gid=999 -o allow_other sshvolume
 ```
 其中uid=999,gid=999 为Sentry的Docker镜像内用户id, 需要登录Sentry容器内检查是否一致，若不一致则修改为Sentry容器内的uid.

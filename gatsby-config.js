@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `kkdev163 ' Blog`,
-    author: `朱坤坤`,
+    author: `kk`,
     description: `kkdev163`,
     siteUrl: `https://kkdev163.github.io`,
     social: {
@@ -47,12 +47,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
